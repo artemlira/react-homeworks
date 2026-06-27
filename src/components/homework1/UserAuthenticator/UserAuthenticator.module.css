@@ -1,0 +1,40 @@
+.userAuthenticator {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.label {
+  font-size: 18px;
+  color: #333;
+}
+
+.input {
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #333;
+}
+
+.button {
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #333;
+  width: fit-content;
+  cursor: pointer;
+  min-width: 100px;
+  margin: 0 auto;
+}
+
+.message {
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+  margin: 0 auto;
+  width: fit-content;
+}

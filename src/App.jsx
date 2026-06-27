@@ -7,6 +7,7 @@ import SeasonalStyle from "./components/homework1/SeasonalStyle";
 import RandomNumberGenerator
   from "./components/homework1/RandomNumberGenerator";
 import BankAccount from "./components/homework1/BankAccount";
+import UserAuthenticator from "./components/homework1/UserAuthenticator";
 import LoginForm from "./components/homework2/LoginForm";
 
 
@@ -16,7 +17,7 @@ function App() {
     SeasonalStyle,
     RandomNumberGenerator,
     BankAccount,
-    () => <div>Task 1.5 has not yet been done</div>,
+    UserAuthenticator
   ];
 
   const homework2Tasks = [
