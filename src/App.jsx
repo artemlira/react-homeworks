@@ -11,6 +11,7 @@ import UserAuthenticator from "./components/homework1/UserAuthenticator";
 import LoginForm from "./components/homework2/LoginForm";
 import FlightServiceSelector
   from "./components/homework2/FlightServiceSelector";
+import VocabularyTrainer from "./components/homework2/VocabularyTrainer";
 
 
 function App() {
@@ -24,7 +25,8 @@ function App() {
 
   const homework2Tasks = [
     LoginForm,
-    FlightServiceSelector
+    FlightServiceSelector,
+    VocabularyTrainer
   ];
 
   return (
