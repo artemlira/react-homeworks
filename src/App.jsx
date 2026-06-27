@@ -9,6 +9,8 @@ import RandomNumberGenerator
 import BankAccount from "./components/homework1/BankAccount";
 import UserAuthenticator from "./components/homework1/UserAuthenticator";
 import LoginForm from "./components/homework2/LoginForm";
+import FlightServiceSelector
+  from "./components/homework2/FlightServiceSelector";
 
 
 function App() {
@@ -22,6 +24,7 @@ function App() {
 
   const homework2Tasks = [
     LoginForm,
+    FlightServiceSelector
   ];
 
   return (
