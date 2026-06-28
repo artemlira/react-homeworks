@@ -28,7 +28,21 @@ function FlightServiceSelector() {
 
   return (
     <>
-      <label className={styles.label}>
+      <div>
+        <h2 className={styles.title}>
+          Job condition:
+        </h2>
+        <p className={styles.description}>
+          Задача 2. З випадаючого списку вибираємо клас квитка у літаку. Якщо<br />
+          1) бізнес -  виводимо елементи для вибору газети та коньяку (якщо вибрано коньяк, то запропонувати закуску (так/ні)), на фоні зображення бізнес кают<br />
+          2) економ – виводимо елементи для вибору типу пива і чипсів, на фоні хмарки.<br />
+        </p>
+      </div>
+      <h2 className={styles.title}>
+        Solution:
+      </h2>
+      <div>
+        <label className={styles.label}>
         Class
         <select
           className={styles.select}
@@ -45,67 +59,68 @@ function FlightServiceSelector() {
         </select>
 
       </label>
-      <div className={styles.flightServiceSelector}>
-        {!!selectingAnImageByClass && <img
-          className={styles.image}
-          src={selectingAnImageByClass}
-          alt="Image"
-          width="200"
-          height="200"
-          loading="lazy"
-        />}
-        {classTicket === 'business' &&
-          <div className={styles.flightServiceSelector__checkboxes}>
-            <p className={styles.flightServiceSelector__checkboxes__title}>Select additional services</p>
-            <label>
-              <input
-                type="checkbox"
-                checked={hasNewspaper}
-                onChange={() => setHasNewspaper(!hasNewspaper)}
-              />
-              Newspaper
-            </label>
-            <label>
-              <input
-                type="checkbox"
-                checked={hasCognac}
-                onChange={() => setHasCognac(!hasCognac)}
-              />
-              Cognac
-            </label>
-            {hasCognac && (
-              <div className={styles.flightServiceSelector__checkboxes__snacks}>
-                <label>
-                  <input
-                    type="checkbox"
-                    checked={hasSnacks}
-                    onChange={(e) => setHasSnacks(e.target.checked)}
-                  />
-                  Do you want snacks? (Yes/No)
-                </label>
-              </div>
-            )}
-          </div>}
-        {classTicket === 'econom' &&
-          <div className={styles.flightServiceSelector__checkboxes}>
-            <p className={styles.flightServiceSelector__checkboxes__title}>Select additional services</p>
-            <label>
-              <input
-                type="checkbox"
-                checked={hasBeer}
-                onChange={() => setHasBeer(!hasBeer)}
-              />
-              Beer
-            </label>
-            <label>
-              <input
-                type="checkbox"
-                checked={hasChips}
-                onChange={() => setHasChips(!hasChips)}
-              />
-              Chips
-            </label>
-          </div>}
+        <div className={styles.flightServiceSelector}>
+          {!!selectingAnImageByClass && <img
+            className={styles.image}
+            src={selectingAnImageByClass}
+            alt="Image"
+            width="200"
+            height="200"
+            loading="lazy"
+          />}
+          {classTicket === 'business' &&
+            <div className={styles.flightServiceSelector__checkboxes}>
+              <p className={styles.flightServiceSelector__checkboxes__title}>Select additional services</p>
+              <label>
+                <input
+                  type="checkbox"
+                  checked={hasNewspaper}
+                  onChange={() => setHasNewspaper(!hasNewspaper)}
+                />
+                Newspaper
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  checked={hasCognac}
+                  onChange={() => setHasCognac(!hasCognac)}
+                />
+                Cognac
+              </label>
+              {hasCognac && (
+                <div className={styles.flightServiceSelector__checkboxes__snacks}>
+                  <label>
+                    <input
+                      type="checkbox"
+                      checked={hasSnacks}
+                      onChange={(e) => setHasSnacks(e.target.checked)}
+                    />
+                    Do you want snacks? (Yes/No)
+                  </label>
+                </div>
+              )}
+            </div>}
+          {classTicket === 'econom' &&
+            <div className={styles.flightServiceSelector__checkboxes}>
+              <p className={styles.flightServiceSelector__checkboxes__title}>Select additional services</p>
+              <label>
+                <input
+                  type="checkbox"
+                  checked={hasBeer}
+                  onChange={() => setHasBeer(!hasBeer)}
+                />
+                Beer
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  checked={hasChips}
+                  onChange={() => setHasChips(!hasChips)}
+                />
+                Chips
+              </label>
+            </div>}
+        </div>
       </div>
     </>
   )

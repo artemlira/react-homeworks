@@ -10,6 +10,13 @@
   color: #333;
 }
 
+.description {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 18px;
+  color: #333;
+}
+
 .workerList {
   list-style: none;
   padding: 0;

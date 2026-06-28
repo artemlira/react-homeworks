@@ -19,19 +19,32 @@ function WorkersSalaryList() {
     }
   ];
   return (
-    <div className={styles.workersSalaryList}>
-      <h2 className={styles.title}>Список працівників</h2>
-      <ul className={styles.workerList}>
-        {workerList.map(worker => (
-          <li
-            key={worker.id}
-            className={styles.workerItem}
-          >
-            {worker.name}: {worker.salary} грн
-          </li>
-        ))}
-      </ul>
-    </div>
+    <>
+      <div>
+        <h2 className={styles.title}>
+          Job condition:
+        </h2>
+        <p className={styles.description}>
+          Задача 4. Вивести список як маркований список з елементами у форматі (name: salary)
+        </p>
+      </div>
+      <h2 className={styles.title}>
+        Solution:
+      </h2>
+      <div className={styles.workersSalaryList}>
+        <h2 className={styles.title}>Список працівників</h2>
+        <ul className={styles.workerList}>
+          {workerList.map(worker => (
+            <li
+              key={worker.id}
+              className={styles.workerItem}
+            >
+              {worker.name}: {worker.salary} грн
+            </li>
+          ))}
+        </ul>
+      </div>
+    </>
   )
 }
 

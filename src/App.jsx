@@ -13,6 +13,7 @@ import FlightServiceSelector
   from "./components/homework2/FlightServiceSelector";
 import VocabularyTrainer from "./components/homework2/VocabularyTrainer";
 import WorkersSalaryList from "./components/homework2/WorkersSalaryList";
+import SearchResults from "./components/homework2/SearchResults";
 
 
 function App() {
@@ -28,7 +29,8 @@ function App() {
     LoginForm,
     FlightServiceSelector,
     VocabularyTrainer,
-    WorkersSalaryList
+    WorkersSalaryList,
+    SearchResults
   ];
 
   return (

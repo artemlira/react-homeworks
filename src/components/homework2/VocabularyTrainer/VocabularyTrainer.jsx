@@ -74,60 +74,73 @@ function VocabularyTrainer() {
   };
 
   return (
-    <div className={styles.vocabularyTrainer}>
+    <>
+      <div>
+        <h2 className={styles.title}>
+          Job condition:
+        </h2>
+        <p className={styles.description}>
+          Задача 3. Елемент тренажера англійської. Виводимо зображення елемента і слово. Користувач вводить відповідь. Якщо вірно – відтворюємо фразу «Добре. Молодець!» (і додаємо зелену рамку до елемента), якщо ні - то відтворюємо фразу «Невірно, спробуйте ще раз» (і додаємо червону рамку).
+        </p>
+      </div>
       <h2 className={styles.title}>
-        Тренажер англійської мови ({currentIndex + 1} / {elements.length})
+        Solution:
       </h2>
+      <div className={styles.vocabularyTrainer}>
+        <h2 className={styles.title}>
+          Тренажер англійської мови ({currentIndex + 1} / {elements.length})
+        </h2>
 
-      <div className={`${styles.card} ${status === 'correct' && styles.card_correct} ${status === 'error' && styles.card_error}`}>
-        <div className={styles.imageWrapper}>
-          <img
-            src={currentItem.image}
-            alt={currentItem.titleEng}
-            className={styles.image}
-            loading="lazy"
-          />
-        </div>
-
-        <div className={styles.info}>
-          <p className={styles.wordUkr}>
-            Перекладіть українською: <strong>{currentItem.titleEng}</strong>
-          </p>
-
-          <div className={styles.inputGroup}>
-            <input
-              type="text"
-              placeholder="Введіть відповідь"
-              value={userAnswer}
-              onChange={(e) => setUserAnswer(e.target.value)}
-              className={styles.input}
+        <div className={`${styles.card} ${status === 'correct' && styles.card_correct} ${status === 'error' && styles.card_error}`}>
+          <div className={styles.imageWrapper}>
+            <img
+              src={currentItem.image}
+              alt={currentItem.titleEng}
+              className={styles.image}
+              loading="lazy"
             />
-            <button
-              type="button"
-              onClick={checkAnswer}
-              className={styles.button}
-            >
-              Перевірити
-            </button>
-            {status === 'correct' && (
-              <button
-                type="button"
-                onClick={handleNext}
-                className={styles.buttonNext}
-              >
-                Далі
-              </button>
-            )}
           </div>
 
-          {feedbackMessage && (
-            <p className={`${styles.feedback} ${status === 'correct' ? styles.feedback_correct : styles.feedback_error}`}>
-              {feedbackMessage}
+          <div className={styles.info}>
+            <p className={styles.wordUkr}>
+              Перекладіть українською: <strong>{currentItem.titleEng}</strong>
             </p>
-          )}
+
+            <div className={styles.inputGroup}>
+              <input
+                type="text"
+                placeholder="Введіть відповідь"
+                value={userAnswer}
+                onChange={(e) => setUserAnswer(e.target.value)}
+                className={styles.input}
+              />
+              <button
+                type="button"
+                onClick={checkAnswer}
+                className={styles.button}
+              >
+                Перевірити
+              </button>
+              {status === 'correct' && (
+                <button
+                  type="button"
+                  onClick={handleNext}
+                  className={styles.buttonNext}
+                >
+                  Далі
+                </button>
+              )}
+            </div>
+
+            {feedbackMessage && (
+              <p className={`${styles.feedback} ${status === 'correct' ? styles.feedback_correct : styles.feedback_error}`}>
+                {feedbackMessage}
+              </p>
+            )}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 
