@@ -12,6 +12,7 @@ import LoginForm from "./components/homework2/LoginForm";
 import FlightServiceSelector
   from "./components/homework2/FlightServiceSelector";
 import VocabularyTrainer from "./components/homework2/VocabularyTrainer";
+import WorkersSalaryList from "./components/homework2/WorkersSalaryList";
 
 
 function App() {
@@ -26,7 +27,8 @@ function App() {
   const homework2Tasks = [
     LoginForm,
     FlightServiceSelector,
-    VocabularyTrainer
+    VocabularyTrainer,
+    WorkersSalaryList
   ];
 
   return (
