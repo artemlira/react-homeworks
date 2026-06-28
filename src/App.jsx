@@ -14,6 +14,7 @@ import FlightServiceSelector
 import VocabularyTrainer from "./components/homework2/VocabularyTrainer";
 import WorkersSalaryList from "./components/homework2/WorkersSalaryList";
 import SearchResults from "./components/homework2/SearchResults";
+import KitchenKanbanBoard from "./components/homework2/KitchenKanbanBoard";
 
 
 function App() {
@@ -30,7 +31,8 @@ function App() {
     FlightServiceSelector,
     VocabularyTrainer,
     WorkersSalaryList,
-    SearchResults
+    SearchResults,
+    KitchenKanbanBoard
   ];
 
   return (
