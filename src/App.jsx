@@ -15,6 +15,7 @@ import VocabularyTrainer from "./components/homework2/VocabularyTrainer";
 import WorkersSalaryList from "./components/homework2/WorkersSalaryList";
 import SearchResults from "./components/homework2/SearchResults";
 import KitchenKanbanBoard from "./components/homework2/KitchenKanbanBoard";
+import SmConverter from "./components/homework3/SmConverter";
 
 
 function App() {
@@ -35,6 +36,18 @@ function App() {
     KitchenKanbanBoard
   ];
 
+  const homework3Tasks = [
+    SmConverter
+  ]
+
+  const homework4Tasks = [
+    () => {'HomeWork 4 Task 1'},
+  ]
+
+  const homework5Tasks = [
+    () => {'HomeWork 5 Task 1'},
+  ]
+
   return (
     <HashRouter>
       <Routes>
@@ -54,6 +67,27 @@ function App() {
           element={<HomeworkLayout
             title="Homework №2"
             tasks={homework2Tasks}
+          />}
+        />
+        <Route
+          path="/homework3"
+          element={<HomeworkLayout
+            title="Homework №3"
+            tasks={homework3Tasks}
+          />}
+        />
+        <Route
+          path="/homework4"
+          element={<HomeworkLayout
+            title="Homework №4"
+            tasks={homework4Tasks}
+          />}
+        />
+        <Route
+          path="/homework5"
+          element={<HomeworkLayout
+            title="Homework №5"
+            tasks={homework5Tasks}
           />}
         />
       </Routes>
