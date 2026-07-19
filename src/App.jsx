@@ -20,6 +20,7 @@ import TemperatureColorMapper
   from "./components/homework3/TemperatureColorMapper";
 import SpeedLimitController from "./components/homework3/SpeedLimitController";
 import Saper from "./components/homework3/Saper";
+import AthletesTransferList from "./components/homework3/AthletesTransferList";
 
 
 function App() {
@@ -44,8 +45,10 @@ function App() {
     SmConverter,
     TemperatureColorMapper,
     SpeedLimitController,
-    Saper
+    Saper,
+    AthletesTransferList
   ]
+
 
   const homework4Tasks = [
     () => {

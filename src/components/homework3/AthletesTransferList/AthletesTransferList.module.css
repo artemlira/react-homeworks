@@ -1,0 +1,98 @@
+.conditionWrapper,
+.solutionWrapper {
+  border: 1px dotted #222222;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #222222;
+}
+
+.solutionWrapper {
+  margin-top: 30px;
+}
+
+.description {
+  max-width: 800px;
+  line-height: 1.5;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+.transferListContainer {
+  display: flex;
+  gap: 30px;
+  font-family: sans-serif;
+  justify-content: center;
+}
+
+.column {
+  width: 280px;
+}
+
+.columnTitle {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: normal;
+  color: #1f2028;
+}
+
+.list {
+  border: 2px solid #000;
+  min-height: 300px;
+  padding: 10px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #000;
+  padding: 8px 12px;
+  background-color: #fff;
+}
+
+.name {
+  font-size: 1rem;
+}
+
+.arrowButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+  transition: transform 0.1s ease;
+}
+
+.arrowButton svg {
+  width: 25px;
+  height: auto;
+}
+
+.arrowButton:hover {
+  transform: scale(1.2);
+}
+
+.greenArrow {
+  color: #28a745;
+}
+
+.redArrow {
+  color: #dc3545;
+}
+
+.emptyText {
+  color: #777;
+  font-style: italic;
+  text-align: center;
+  margin-top: 20px;
+}
