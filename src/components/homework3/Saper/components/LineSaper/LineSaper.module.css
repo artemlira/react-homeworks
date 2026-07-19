@@ -1,0 +1,20 @@
+.closeCell {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #222222;
+  background-color: gray;
+}
+
+.freeCell {
+  width: 30px;
+  height: 30px;
+  background-color: green;
+  border: 2px solid #222222;
+}
+
+.dangerCell {
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  border: 2px solid #222222;
+}

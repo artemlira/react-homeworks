@@ -1,0 +1,17 @@
+.conditionWrapper,
+.solutionWrapper {
+  border: 1px dotted #222222;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #222222;
+}
+
+.solutionWrapper {
+  margin-top: 30px;
+}

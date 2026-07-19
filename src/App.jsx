@@ -16,6 +16,7 @@ import WorkersSalaryList from "./components/homework2/WorkersSalaryList";
 import SearchResults from "./components/homework2/SearchResults";
 import KitchenKanbanBoard from "./components/homework2/KitchenKanbanBoard";
 import SmConverter from "./components/homework3/SmConverter";
+import Saper from "./components/homework3/Saper";
 
 
 function App() {
@@ -37,15 +38,20 @@ function App() {
   ];
 
   const homework3Tasks = [
-    SmConverter
+    SmConverter,
+    Saper
   ]
 
   const homework4Tasks = [
-    () => {'HomeWork 4 Task 1'},
+    () => {
+      'HomeWork 4 Task 1'
+    },
   ]
 
   const homework5Tasks = [
-    () => {'HomeWork 5 Task 1'},
+    () => {
+      'HomeWork 5 Task 1'
+    },
   ]
 
   return (
