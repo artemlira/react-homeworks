@@ -16,6 +16,8 @@ import WorkersSalaryList from "./components/homework2/WorkersSalaryList";
 import SearchResults from "./components/homework2/SearchResults";
 import KitchenKanbanBoard from "./components/homework2/KitchenKanbanBoard";
 import SmConverter from "./components/homework3/SmConverter";
+import TemperatureColorMapper
+  from "./components/homework3/TemperatureColorMapper";
 import Saper from "./components/homework3/Saper";
 
 
@@ -39,6 +41,7 @@ function App() {
 
   const homework3Tasks = [
     SmConverter,
+    TemperatureColorMapper,
     Saper
   ]
 

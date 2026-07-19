@@ -1,0 +1,60 @@
+.temperatureColorMapper {
+
+}
+
+.conditionWrapper,
+.solutionWrapper {
+  border: 1px dotted #222222;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #222222;
+}
+
+.solutionWrapper {
+  margin-top: 30px;
+}
+
+.temperatureInput {
+  background-color: transparent;
+  padding: 5px 10px;
+  border-radius: 6px;
+  border: 1px solid #222222;
+  color: #191919;
+  font-size: 16px;
+}
+
+.white {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.blue {
+  background-color: blue;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.green {
+  background-color: green;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.red {
+  background-color: red;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.result {
+  background-color: #c4c4c4;
+  padding: 10px;
+  border-radius: 10px;
+}
