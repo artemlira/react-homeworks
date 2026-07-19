@@ -18,6 +18,7 @@ import KitchenKanbanBoard from "./components/homework2/KitchenKanbanBoard";
 import SmConverter from "./components/homework3/SmConverter";
 import TemperatureColorMapper
   from "./components/homework3/TemperatureColorMapper";
+import SpeedLimitController from "./components/homework3/SpeedLimitController";
 import Saper from "./components/homework3/Saper";
 
 
@@ -42,6 +43,7 @@ function App() {
   const homework3Tasks = [
     SmConverter,
     TemperatureColorMapper,
+    SpeedLimitController,
     Saper
   ]
 
