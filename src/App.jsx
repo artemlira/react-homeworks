@@ -22,6 +22,7 @@ import SpeedLimitController from "./components/homework3/SpeedLimitController";
 import Saper from "./components/homework3/Saper";
 import AthletesTransferList from "./components/homework3/AthletesTransferList";
 import MessengerSimulator from "./components/homework4/MessengerSimulator";
+import NumberGuessingGame from "./components/homework4/NumberGuessingGame";
 
 
 function App() {
@@ -53,9 +54,7 @@ function App() {
 
   const homework4Tasks = [
     MessengerSimulator,
-    () => {
-      return 'HomeWork 4 Task 2 (Comming Soon)'
-    },
+    NumberGuessingGame,
   ]
 
   const homework5Tasks = [
