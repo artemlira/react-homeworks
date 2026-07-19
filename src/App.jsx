@@ -21,6 +21,7 @@ import TemperatureColorMapper
 import SpeedLimitController from "./components/homework3/SpeedLimitController";
 import Saper from "./components/homework3/Saper";
 import AthletesTransferList from "./components/homework3/AthletesTransferList";
+import MessengerSimulator from "./components/homework4/MessengerSimulator";
 
 
 function App() {
@@ -51,14 +52,15 @@ function App() {
 
 
   const homework4Tasks = [
+    MessengerSimulator,
     () => {
-      'HomeWork 4 Task 1'
+      return 'HomeWork 4 Task 2 (Comming Soon)'
     },
   ]
 
   const homework5Tasks = [
     () => {
-      'HomeWork 5 Task 1'
+      return 'HomeWork 5 Task 1 (Comming Soon)'
     },
   ]
 

@@ -35,14 +35,14 @@ function Home() {
               📂 Homework №3
             </Link>
           </li>
-          {/*<li>*/}
-          {/*  <Link*/}
-          {/*    className={styles.navLink}*/}
-          {/*    to="/homework4"*/}
-          {/*  >*/}
-          {/*    📂 Homework №4*/}
-          {/*  </Link>*/}
-          {/*</li>*/}
+          <li>
+            <Link
+              className={styles.navLink}
+              to="/homework4"
+            >
+              📂 Homework №4
+            </Link>
+          </li>
           {/*<li>*/}
           {/*  <Link*/}
           {/*    className={styles.navLink}*/}
