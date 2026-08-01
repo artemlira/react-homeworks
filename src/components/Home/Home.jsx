@@ -51,6 +51,14 @@ function Home() {
               📂 Homework №5
             </Link>
           </li>
+          <li>
+            <Link
+              className={styles.navLink}
+              to="/homework6"
+            >
+              📂 Homework №6
+            </Link>
+          </li>
         </ul>
       </nav>
     </div>
