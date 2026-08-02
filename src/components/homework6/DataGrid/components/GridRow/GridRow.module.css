@@ -1,0 +1,32 @@
+.gridRow {
+  display: grid;
+  grid-template-columns: 60px 1fr 1fr 140px 100px;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.selectedRow {
+  background-color: #eaf4ff;
+}
+
+.cell {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.rowButton {
+  padding: 6px 10px;
+  border: 1px solid #007bff;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.rowButton:hover {
+  background-color: #007bff;
+  color: #ffffff;
+}

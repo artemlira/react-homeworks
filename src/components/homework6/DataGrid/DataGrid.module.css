@@ -1,0 +1,72 @@
+.conditionWrapper,
+.solutionWrapper {
+  border: 1px dotted #222222;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #222222;
+  margin-bottom: 10px;
+}
+
+.solutionWrapper {
+  margin-top: 30px;
+}
+
+.description {
+  max-width: 800px;
+  line-height: 1.5;
+  margin: 0 auto 30px;
+}
+
+.dataGrid {
+  max-width: 850px;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.buttons button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: #0056b3;
+}
+
+.info {
+  margin: 8px 0;
+  color: #555555;
+}
+
+.gridHeader {
+  display: grid;
+  grid-template-columns: 60px 1fr 1fr 140px 100px;
+  gap: 10px;
+  padding: 10px;
+  background-color: #eeeeee;
+  font-weight: 700;
+}

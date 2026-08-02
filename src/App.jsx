@@ -27,6 +27,7 @@ import TasksAssignment from "./components/homework5/TasksAssignment";
 import ProductsCatalog from "./components/homework5/ProductsCatalog";
 import CalculatorOptimization
   from "./components/homework6/CalculatorOptimization";
+import DataGrid from "./components/homework6/DataGrid";
 
 
 function App() {
@@ -67,8 +68,9 @@ function App() {
 
   const homework6Tasks = [
     CalculatorOptimization,
+    DataGrid,
     () => {
-      return <h1>Homework 6 Task #2</h1>
+      return <h1>Homework 6 Task #3</h1>
     },
   ];
 
