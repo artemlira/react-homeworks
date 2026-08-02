@@ -1,8 +1,7 @@
-import React from 'react';
-import {tasksList, workersList} from "../data/tasks_devider";
+import {tasksList, workersList} from "./data/tasks_devider";
 import styles
   from "./TasksAssignment.module.css";
-import TaskManager from "./TaskManager";
+import TaskManager from "./components/TaskManager";
 //Задача 1. Доробити проєкт з призначеняням задач.
 // 1) коли додаємо задачу іншому працівнику, то у попереднього працівника треба забрати
 // 2) коли видаляємо задачу, то у формі треба скидувати значення селекта

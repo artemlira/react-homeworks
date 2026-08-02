@@ -24,6 +24,7 @@ import AthletesTransferList from "./components/homework3/AthletesTransferList";
 import MessengerSimulator from "./components/homework4/MessengerSimulator";
 import NumberGuessingGame from "./components/homework4/NumberGuessingGame";
 import TasksAssignment from "./components/homework5/TasksAssignment";
+import ProductsCatalog from "./components/homework5/ProductsCatalog";
 
 
 function App() {
@@ -60,9 +61,7 @@ function App() {
 
   const homework5Tasks = [
     TasksAssignment,
-    () => {
-      return 'HomeWork 5 Task 2 (Comming Soon)'
-    },
+    ProductsCatalog,
   ]
 
   return (
