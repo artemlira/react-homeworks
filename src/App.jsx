@@ -28,6 +28,8 @@ import ProductsCatalog from "./components/homework5/ProductsCatalog";
 import CalculatorOptimization
   from "./components/homework6/CalculatorOptimization";
 import DataGrid from "./components/homework6/DataGrid";
+import WindowSizeInfo from "./components/homework6/WindowSizeInfo";
+import DebouncedSearch from "./components/homework6/DebouncedSearch";
 
 
 function App() {
@@ -69,9 +71,8 @@ function App() {
   const homework6Tasks = [
     CalculatorOptimization,
     DataGrid,
-    () => {
-      return <h1>Homework 6 Task #3</h1>
-    },
+    WindowSizeInfo,
+    DebouncedSearch,
   ];
 
   return (

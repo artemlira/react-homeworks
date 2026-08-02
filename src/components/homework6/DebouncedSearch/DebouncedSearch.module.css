@@ -1,0 +1,74 @@
+.conditionWrapper,
+.solutionWrapper {
+  border: 1px dotted #222222;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #222222;
+  margin-bottom: 10px;
+}
+
+.solutionWrapper {
+  margin-top: 30px;
+}
+
+.description {
+  max-width: 800px;
+  line-height: 1.5;
+  margin: 0 auto 30px;
+}
+
+.searchBox {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  background-color: #ffffff;
+  font-family: sans-serif;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 600;
+  color: #333333;
+}
+
+.input {
+  padding: 10px 12px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.info {
+  margin: 10px 0 0;
+  color: #666666;
+}
+
+.list {
+  display: grid;
+  gap: 8px;
+  padding: 0;
+  margin: 18px 0 0;
+  list-style: none;
+}
+
+.listItem {
+  padding: 10px 12px;
+  border: 1px solid #eeeeee;
+  border-radius: 6px;
+  background-color: #f8f9fa;
+}
