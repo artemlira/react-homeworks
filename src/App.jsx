@@ -30,6 +30,7 @@ import CalculatorOptimization
 import DataGrid from "./components/homework6/DataGrid";
 import WindowSizeInfo from "./components/homework6/WindowSizeInfo";
 import DebouncedSearch from "./components/homework6/DebouncedSearch";
+import Homework7 from "./components/homework7/Homework7";
 
 
 function App() {
@@ -73,6 +74,10 @@ function App() {
     DataGrid,
     WindowSizeInfo,
     DebouncedSearch,
+  ];
+
+  const homework7Tasks = [
+    Homework7
   ];
 
   return (
@@ -122,6 +127,13 @@ function App() {
           element={<HomeworkLayout
             title="Homework №6"
             tasks={homework6Tasks}
+          />}
+        />
+        <Route
+          path="/homework7/*"
+          element={<HomeworkLayout
+            title="Homework №7"
+            tasks={homework7Tasks}
           />}
         />
       </Routes>

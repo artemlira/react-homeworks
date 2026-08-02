@@ -1,0 +1,28 @@
+.productList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+}
+
+.link {
+  text-decoration: none;
+  transition-duration: 0.3s;
+  color: #1f2028;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .link:hover {
+    color: #007bff;
+  }
+}

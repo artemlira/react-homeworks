@@ -1,0 +1,33 @@
+.homePage {
+  width: 100%;
+}
+
+.title {
+  color: #222222;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.listTitle {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4;
+  margin: 0;
+  color: #222222;
+  text-align: start;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+}
+
+.listItem {
+  text-align: start;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #222222;
+}

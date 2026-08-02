@@ -1,0 +1,22 @@
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 24px;
+}
+
+.nav a {
+  color: #111;
+  text-decoration: none;
+}
+
+.nav a[class*='active'] {
+  color: #007bff;
+  text-decoration: underline;
+  outline-offset: 4px;
+}
