@@ -25,6 +25,8 @@ import MessengerSimulator from "./components/homework4/MessengerSimulator";
 import NumberGuessingGame from "./components/homework4/NumberGuessingGame";
 import TasksAssignment from "./components/homework5/TasksAssignment";
 import ProductsCatalog from "./components/homework5/ProductsCatalog";
+import CalculatorOptimization
+  from "./components/homework6/CalculatorOptimization";
 
 
 function App() {
@@ -51,18 +53,24 @@ function App() {
     SpeedLimitController,
     Saper,
     AthletesTransferList
-  ]
-
+  ];
 
   const homework4Tasks = [
     MessengerSimulator,
     NumberGuessingGame,
-  ]
+  ];
 
   const homework5Tasks = [
     TasksAssignment,
     ProductsCatalog,
-  ]
+  ];
+
+  const homework6Tasks = [
+    CalculatorOptimization,
+    () => {
+      return <h1>Homework 6 Task #2</h1>
+    },
+  ];
 
   return (
     <HashRouter>
@@ -104,6 +112,13 @@ function App() {
           element={<HomeworkLayout
             title="Homework №5"
             tasks={homework5Tasks}
+          />}
+        />
+        <Route
+          path="/homework6"
+          element={<HomeworkLayout
+            title="Homework №6"
+            tasks={homework6Tasks}
           />}
         />
       </Routes>

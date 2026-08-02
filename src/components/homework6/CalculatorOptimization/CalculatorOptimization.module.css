@@ -1,0 +1,84 @@
+.conditionWrapper,
+.solutionWrapper {
+  border: 1px dotted #222222;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #222222;
+  margin-bottom: 10px;
+}
+
+.solutionWrapper {
+  margin-top: 30px;
+}
+
+.description {
+  max-width: 800px;
+  line-height: 1.5;
+  margin: 0 auto 30px;
+}
+
+.calculatorCard {
+  max-width: 450px;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  font-family: sans-serif;
+  margin: 0 auto;
+}
+
+.inputGroup {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #333;
+  flex: 1;
+}
+
+.input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.input:focus {
+  border-color: #007bff;
+}
+
+.testText {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-bottom: 10px;
+}
+
+.button {
+  padding: 8px 16px;
+  background-color: #6c757d;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: #5a6268;
+}
